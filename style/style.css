@@ -10,7 +10,7 @@ body {
   color: #fff;
 }
 
-/* HERO imgs/test_0.jpg */
+/* HERO imgs/test_0.jpg  https://d48-a.sdn.cz/d_48/c_img_gS_q/Yr1ee.jpeg*/
 .hero {
   position: relative;
   min-height: 100vh;
@@ -37,14 +37,31 @@ body {
   z-index: 2;
 }
 
-.badge {
-  display: inline-block;
-  background: rgba(0, 200, 150, 0.15);
-  color: #3ee6b8;
-  padding: 0.4rem 0.9rem;
-  border-radius: 20px;
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.45rem 1rem;
+  margin-bottom: 1.5rem;
+
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+
+  color: #e6f6ff;
   font-size: 0.9rem;
-  margin-bottom: 1.2rem;
+  font-weight: 500;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-badge .dot {
+  width: 8px;
+  height: 8px;
+  background: #3ee6b8;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(62, 230, 184, 0.8);
 }
 
 h1 {
@@ -91,7 +108,18 @@ p {
 .btn-secondary:hover {
   background: rgba(255,255,255,0.1);
 }
+.hero-divider {
+  width: 100%;
+  height: 1px;
+  margin: 2.5rem 0 2rem 0;
 
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.35) 50%,
+    rgba(255,255,255,0) 100%
+  );
+}
 /* STATS */
 .hero-stats {
   display: flex;
