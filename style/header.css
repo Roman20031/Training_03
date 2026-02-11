@@ -3,7 +3,8 @@ header{
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: fixed;
-    background-color: darkgoldenrod;
+    background-color: white;
+    z-index: 1000;
 
     .wrapper{
         display: flex;
